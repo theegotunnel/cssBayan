@@ -6,6 +6,10 @@
 
 }
 
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .accordion{
   max-width: 18.75rem;
   margin: 2rem auto;
@@ -58,13 +62,35 @@ img{
 }
 
 
-
-
 #item2:checked ~ .hide > .image {
   max-height: 11.25rem;
   transition: max-height 0.3s linear;
 }
 
+
+.close{
+  visibility: hidden;
+  
+  }
+
+  #item1:checked ~ .open {
+    visibility: hidden;
+    display: none;
+  }
+  
+  #item1:checked ~ .close {
+    visibility: visible;
+  }
+
+  #item2:checked ~ .open {
+    visibility: hidden;
+    display: none;
+
+  }
+  
+  #item2:checked ~ .close {
+    visibility: visible;
+  }
 
 
 
