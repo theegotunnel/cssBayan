@@ -1,0 +1,254 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  font-size: 1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+  padding-bottom: 1rem;
+}
+
+.accordion{
+  max-width: 18.75rem;
+  margin: 2rem auto;
+}
+
+img{
+  max-width: 100%;
+}
+
+hr{
+  margin: 0.1rem;
+}
+
+.item-title{
+  cursor: pointer;
+}
+
+.item-content{
+  max-width: 17.75rem;
+  
+}
+
+.item-input{
+  appearance: none;
+  width: 0;
+  height: 0;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.image{
+  display: block ;
+}
+
+
+
+/* Switch */
+.image{
+  margin: auto;
+  max-height: 0;
+  transition: max-height 0.3s linear;
+}
+
+
+
+.close{
+  visibility: hidden;
+  
+  }
+
+/* image animation */
+#item1:checked ~ .hide > .image{
+  max-height: 11.25rem;
+  transition: max-height 0.3s linear;
+}
+
+
+#item2:checked ~ .hide > .image {
+  max-height: 11.25rem;
+  transition: max-height 0.3s linear;
+}
+
+#item3:checked ~ .hide > .image{
+  max-height: 11.25rem;
+  transition: max-height 0.3s linear;
+}
+
+
+#item4:checked ~ .hide > .image {
+  max-height: 11.25rem;
+  transition: max-height 0.3s linear;
+}
+
+#item5:checked ~ .hide > .image {
+  max-height: 11.25rem;
+  transition: max-height 0.3s linear;
+}
+
+/* Swithc Icons */
+
+  #item1:checked ~ .open {
+    visibility: hidden;
+    display: none;
+  }
+  
+  #item1:checked ~ .close {
+    visibility: visible;
+  }
+
+  #item2:checked ~ .open {
+    visibility: hidden;
+    display: none;
+
+  }
+  
+  #item2:checked ~ .close {
+    visibility: visible;
+  }
+
+  #item3:checked ~ .open {
+    visibility: hidden;
+    display: none;
+  }
+  
+  #item3:checked ~ .close {
+    visibility: visible;
+  }
+
+  #item4:checked ~ .open {
+    visibility: hidden;
+    display: none;
+  }
+  
+  #item4:checked ~ .close {
+    visibility: visible;
+  }
+
+  #item5:checked ~ .open {
+    visibility: hidden;
+    display: none;
+  }
+  
+  #item5:checked ~ .close {
+    visibility: visible;
+  }
+
+
+/* Responsible */
+@media (max-width: 1920px) and (min-width: 820px){
+
+  
+  body{
+    font-size: 2rem;
+
+  }
+  .accordion{
+    max-width: 30rem;
+    margin: 4rem auto;
+  }
+ 
+} 
+
+@media (min-width: 1920px){
+  body{
+    font-size: 3rem;
+  }
+  .accordion{
+    max-width: 60rem;
+    margin: 6rem auto;
+  }
+} 
+
+
+@media (hover: hover) {
+  #item1:hover ~ .hide > .image{
+    max-height: 11.25rem;
+    transition: max-height 0.3s linear;
+  }
+  #item2:hover ~ .hide > .image {
+    max-height: 11.25rem;
+    transition: max-height 0.3s linear;
+  }
+  
+  #item3:hover ~ .hide > .image{
+    max-height: 11.25rem;
+    transition: max-height 0.3s linear;
+  }
+  
+  
+  #item4:hover ~ .hide > .image {
+    max-height: 11.25rem;
+    transition: max-height 0.3s linear;
+  }
+  
+  #item5:hover ~ .hide > .image {
+    max-height: 11.25rem;
+    transition: max-height 0.3s linear;
+  }
+
+/* icons */
+#item1:hover ~ .open {
+  visibility: hidden;
+  display: none;
+}
+
+#item1:hover ~ .close {
+  visibility: visible;
+}
+
+#item2:hover ~ .open {
+  visibility: hidden;
+  display: none;
+
+}
+
+#item2:hover ~ .close {
+  visibility: visible;
+}
+
+#item3:hover ~ .open {
+  visibility: hidden;
+  display: none;
+}
+
+#item3:hover ~ .close {
+  visibility: visible;
+}
+
+#item4:hover ~ .open {
+  visibility: hidden;
+  display: none;
+}
+
+#item4:hover ~ .close {
+  visibility: visible;
+}
+
+#item5:hover ~ .open {
+  visibility: hidden;
+  display: none;
+}
+
+#item5:hover ~ .close {
+  visibility: visible;
+}
+
+
+
+}
+
+
+
+  
