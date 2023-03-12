@@ -146,16 +146,108 @@ hr{
 
 
 /* Responsible */
-
-@media (hover: hover) {
+@media (max-width: 1920px) and (min-width: 820px){
 
   
+  body{
+    font-size: 2rem;
+
+  }
+  .accordion{
+    max-width: 30rem;
+    margin: 4rem auto;
+  }
+ 
+} 
+
+@media (min-width: 1920px){
+  body{
+    font-size: 4rem;
+  }
+  .accordion{
+    max-width: 60rem;
+    margin: 6rem auto;
+  }
+} 
+
+
+@media (hover: hover) {
+  #item1:hover ~ .hide > .image{
+    max-height: 11.25rem;
+    transition: max-height 0.3s linear;
+  }
+  #item2:hover ~ .hide > .image {
+    max-height: 11.25rem;
+    transition: max-height 0.3s linear;
+  }
+  
+  #item3:hover ~ .hide > .image{
+    max-height: 11.25rem;
+    transition: max-height 0.3s linear;
+  }
+  
+  
+  #item4:hover ~ .hide > .image {
+    max-height: 11.25rem;
+    transition: max-height 0.3s linear;
+  }
+  
+  #item5:hover ~ .hide > .image {
+    max-height: 11.25rem;
+    transition: max-height 0.3s linear;
+  }
+
+/* icons */
+#item1:hover ~ .open {
+  visibility: hidden;
+  display: none;
+}
+
+#item1:hover ~ .close {
+  visibility: visible;
+}
+
+#item2:hover ~ .open {
+  visibility: hidden;
+  display: none;
+
+}
+
+#item2:hover ~ .close {
+  visibility: visible;
+}
+
+#item3:hover ~ .open {
+  visibility: hidden;
+  display: none;
+}
+
+#item3:hover ~ .close {
+  visibility: visible;
+}
+
+#item4:hover ~ .open {
+  visibility: hidden;
+  display: none;
+}
+
+#item4:hover ~ .close {
+  visibility: visible;
+}
+
+#item5:hover ~ .open {
+  visibility: hidden;
+  display: none;
+}
+
+#item5:hover ~ .close {
+  visibility: visible;
+}
+
+
+
 }
 
 
 
   
-/* label :hover~img {
-  max-height: 11.25rem;
-  transition: max-height 0.3s linear;
-} */
